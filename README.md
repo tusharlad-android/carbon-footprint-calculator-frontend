@@ -1,42 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+🌍 Carbon Footprint Calculator - Frontend
+A user-friendly web interface for calculating carbon footprint. Built with React.js and integrates with the backend API.
 
-## Getting Started
+🚀 Live Demo
+🔗 https://frontend-b8kdlfb6y-tushars-projects-7b786313.vercel.app
 
-First, run the development server:
+🛠 Installation & Setup
+1️⃣ Clone the Repository
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/tusharlad-android/carbon-footprint-calculator-frontend.git
+cd carbon-footprint-calculator-frontend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2️⃣ Install Dependencies
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+npm install
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3️⃣ Configure Environment Variables
+Create a .env file in the root folder and add:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+REACT_APP_API_URL=http://localhost:5000/api
+(Replace http://localhost:5000/api with your backend URL after deployment.)
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4️⃣ Run the Frontend
 
-## Learn More
+npm start
+The app will start at http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+📌 Features
+✅ User-friendly UI
+✅ Calculates carbon footprint based on activities
+✅ Real-time API integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+🌐 API Integration
+🔹 Calculate Carbon Footprint
+Endpoint: POST /api/calculate
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Request Body:
+{
+  "travelType": "driving",
+  "distance": 50,
+  "frequency": "petrol",
+  "transportType":"personal",
+}
+Response:
+{
+  "footprint": "5.2 kg CO2"
+}
 
-## Deploy on Vercel
+🚀 Deployment on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1️⃣ Build the Project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-# carbon-footprint-calculator
-# carbon-footprint-calculator-backend
+npm run build
+
+2️⃣ Deploy to Vercel
+
+vercel
+(If you haven’t installed Vercel CLI, install it using npm i -g vercel.)
+
+👨‍💻 Tech Stack
+Frontend: React.js, Tailwind CSS
+Backend: Node.js, Express.js
+
+
+🚀 Made with ❤️ by Tushar lad 🎉
